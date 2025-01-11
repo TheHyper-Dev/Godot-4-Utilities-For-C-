@@ -3,12 +3,12 @@ using Godot;
 public static class Physics
 {
     private static readonly StringName
-    position = "position",
-    collider = "collider",
-    collider_id = "collider_id",
-    collider_rid = "rid",
-    normal = "normal",
-    shape = "shape";
+    const position = "position",
+    const collider = "collider",
+    const collider_id = "collider_id",
+    const collider_rid = "rid",
+    const normal = "normal",
+    const shape = "shape";
 
     public static Vector3 CollisionPoint(Godot.Collections.Dictionary cast_result) => (Vector3)cast_result[position];
     public static Vector3 CollisionNormal(Godot.Collections.Dictionary cast_result) => (Vector3)cast_result[normal];
